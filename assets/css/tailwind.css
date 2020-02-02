@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Analogue';
+  src: url('../fonts/analogue76boldoblique.woff') format('woff'),
+    url('../fonts/analogue76boldoblique.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Optimus';
+  src: url('../fonts/optimus.woff') format('woff'), url('../fonts/optimus.otf') format('otf');
+}

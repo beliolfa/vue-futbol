@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexPage is a Vue instance 1`] = `
+"<div class=\\"mx-auto flex-1 flex flex-col items-center justify-center\\">
+  Index Page
+</div>"
+`;
