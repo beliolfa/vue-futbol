@@ -11,6 +11,9 @@ module.exports = {
         speed: '600ms', // the speed at which the spinner should rotate
       },
     }),
+    textShadow: {
+      4: '4px 4px black',
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -89,15 +92,15 @@ module.exports = {
         600: '#d69e2e',
         700: '#b7791f',
         800: '#975a16',
-        900: '#744210',
+        900: '#D59F64',
       },
       green: {
         100: '#f0fff4',
         200: '#c6f6d5',
         300: '#9ae6b4',
         400: '#68d391',
-        500: '#48bb78',
-        600: '#38a169',
+        500: '#1F400E',
+        600: '#192711',
         700: '#2f855a',
         800: '#276749',
         900: '#22543d',
@@ -173,6 +176,7 @@ module.exports = {
       '16': '4rem',
       '20': '5rem',
       '24': '6rem',
+      '28': '7rem',
       '32': '8rem',
       '40': '10rem',
       '48': '12rem',
@@ -255,8 +259,9 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
-      montserrat: ['Montserrat', 'sans-serif'],
-      itim: ['Itim', 'sans-serif'],
+      title: ['Analogue', 'sans-serif'],
+      dinamic: ['Optimus', 'sans-serif'],
+      menu: ['Orbitron', 'sans-serif'],
       sans: [
         'Lato',
         '-apple-system',
@@ -286,6 +291,8 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
+      huge: '120px',
+      giant: '240px',
     },
     fontWeight: {
       hairline: '100',
@@ -516,5 +523,9 @@ module.exports = {
     zIndex: ['responsive'],
   },
   corePlugins: {},
-  plugins: [require('@tailwindcss/custom-forms'), require('tailwindcss-spinner')()],
+  plugins: [
+    require('@tailwindcss/custom-forms'),
+    require('tailwindcss-spinner')(),
+    require('tailwindcss-typography')(),
+  ],
 }
