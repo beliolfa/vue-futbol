@@ -1,36 +1,43 @@
 module.exports = {
   root: true,
   env: {
+    node: true,
     browser: true,
-    node: true
+    jest: true,
   },
-
-  parserOptions: {
-    ecmaVersion: 2017,
-    parser: 'babel-eslint',
-  },
-
   extends: [
-    '@nuxtjs',
+    'plugin:vue/recommended',
+    'plugin:nuxt/recommended',
     'eslint:recommended',
-    'prettier',
-    'plugin:nuxt/recommended'
+    'prettier/vue',
+    'plugin:prettier/recommended',
   ],
-  plugins: [
-    'prettier'
-  ],
-  // add your custom rules here
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/singleline-html-element-content-newline': 'off',
-    'vue/component-name-in-template-casing': [
+    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+    'vue/comment-directive': 'off',
+    'vue/html-self-closing': [
       'error',
-      'PascalCase',
+      {
+        html: {
+          void: 'any',
+          normal: 'always',
+          component: 'always',
+        },
+        svg: 'always',
+        math: 'always',
+      },
     ],
     // Force this rules for auto fix
     quotes: [2, 'single', 'avoid-escape'],
     semi: [2, 'never'],
-    'comma-dangle': ['error', 'always-multiline'],
-  }
+  },
+  globals: {
+    $nuxt: true,
+  },
+  parserOptions: {
+    parser: 'babel-eslint',
+  },
 }

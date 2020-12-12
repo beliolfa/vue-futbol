@@ -4,7 +4,7 @@
       <div class="text-yellow-900 text-huge font-title text-shadow-4">PC FUTBOL</div>
       <div class="font-dinamic text-white text-4xl flex items-center">
         <span>dinamic</span>
-        <img class="w-24 mx-4" src="~assets/images/dinamic-logo.png" />
+        <img class="w-24 mx-4" src="@/assets/images/dinamic-logo.png" />
         <span>multimedia</span>
       </div>
     </div>

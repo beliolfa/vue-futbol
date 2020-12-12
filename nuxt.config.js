@@ -1,6 +1,4 @@
-require('dotenv').config()
-
-module.exports = {
+module.export = {
   mode: 'universal',
 
   server: {
@@ -63,7 +61,6 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/auth',
-    '@nuxtjs/dotenv',
     '@nuxtjs/proxy',
     '@nuxtjs/svg',
   ],

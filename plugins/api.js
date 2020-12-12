@@ -1,6 +1,6 @@
 // import signupApi from '@/api/signup'
 
-export default function({ $axios }, inject) {
+export default function(ctx, inject) {
   const repositories = {
     // signup: signupApi($axios),
   }
