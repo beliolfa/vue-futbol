@@ -14,9 +14,7 @@
     "test": "jest",
     "e2e": "wait-on http://localhost:3000 && cypress run",
     "e2e:ci": "run-p --race start e2e",
-    "e2e:open": "cypress open",
-    "storybook": "start-storybook -s ./static -p 6006",
-    "build-storybook": "build-storybook"
+    "e2e:open": "cypress open"
   },
   "dependencies": {
     "@nuxtjs/auth": "^4.9.1",
@@ -24,27 +22,16 @@
     "@nuxtjs/svg": "^0.1.6",
     "npm-run-all": "^4.1.5",
     "nuxt": "^2.14.3",
-    "tailwindcss-spinner": "^1.0.0",
-    "tailwindcss-typography": "^2.2.0",
     "vuelidate": "^0.7.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/runtime-corejs2": "^7.5.5",
-    "@nuxtjs/eslint-config": "^1.0.1",
-    "@nuxtjs/eslint-module": "^1.0.0",
-    "@nuxtjs/tailwindcss": "^3.0.0",
-    "@storybook/addon-actions": "^5.1.11",
-    "@storybook/addon-links": "^5.1.11",
-    "@storybook/addons": "^5.1.11",
-    "@storybook/vue": "^5.1.11",
-    "@tailwindcss/custom-forms": "^0.2.0",
+    "@nuxtjs/storybook": "^3.3.0",
+    "@nuxtjs/tailwindcss": "^3.3.4",
     "@vue/test-utils": "^1.0.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
-    "core-js": "2",
     "cypress": "^3.4.1",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.10.0",
@@ -53,8 +40,6 @@
     "eslint-plugin-prettier": "^3.1.2",
     "jest": "^24.9.0",
     "jest-transform-stub": "^2.0.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.2",
     "vue-jest": "^4.0.0-0",
     "wait-on": "^3.3.0"
   }

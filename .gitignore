@@ -93,3 +93,7 @@ test/e2e/screenshots
 
 # Vim swap files
 *.swp
+
+# Storybook
+.nuxt-storybook
+storybook-static

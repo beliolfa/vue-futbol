@@ -1,18 +1,4 @@
-module.export = {
-  mode: 'universal',
-
-  server: {
-    host: 'frontend.boilerplate.test',
-  },
-
-  build: {
-    postcss: {
-      plugins: {
-        autoprefixer: {},
-      },
-    },
-  },
-
+export default {
   /*
    ** Headers of the page
    */
@@ -41,19 +27,13 @@ module.export = {
    */
   loading: { color: '#fff' },
   /*
-   ** Global CSS
-   */
-  css: [
-    // '@/assets/css/components/alert.css',
-  ],
-  /*
    ** Plugins to load before mounting the App
    */
   plugins: ['~/plugins/api', '~/plugins/axios', '~/plugins/globals', '~/plugins/vuelidate'],
   /*
    ** Nuxt.js dev-modules
    */
-  devModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss'],
   /*
    ** Nuxt.js modules
    */
@@ -112,8 +92,5 @@ module.export = {
       },
       secure: false,
     },
-  },
-  router: {
-    middleware: [],
   },
 }
